@@ -1,0 +1,72 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+    padding: 20px;
+}
+
+.container { width: 100%; max-width: 450px; }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 { color: #fff; text-align: center; margin-bottom: 25px; font-size: 24px; }
+
+.input-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+
+.input-group { display: flex; gap: 8px; }
+
+input, select, button {
+    padding: 12px; border-radius: 10px; border: none; outline: none;
+}
+
+input, select { background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+select option { background: #302b63; }
+
+button {
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    color: white; font-weight: 600; cursor: pointer; transition: 0.3s;
+}
+
+button:hover { transform: scale(1.05); }
+
+li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px; margin-bottom: 12px; border-radius: 12px;
+    display: flex; flex-direction: column;
+    color: #fff; transition: 0.3s;
+}
+
+/* Priority Borders */
+li.p-High { border-left: 5px solid #ff4757; }
+li.p-Medium { border-left: 5px solid #ffa502; }
+li.p-Low { border-left: 5px solid #2ed573; }
+
+.task-top { display: flex; justify-content: space-between; align-items: center; }
+.task-top span { cursor: pointer; flex: 1; }
+li.completed span { text-decoration: line-through; opacity: 0.5; }
+
+.task-details {
+    display: flex; justify-content: space-between;
+    font-size: 11px; margin-top: 8px; opacity: 0.7;
+}
+
+.delete-btn { color: #ff4757; background: none; border: none; cursor: pointer; font-size: 18px; }
+
+.footer-credit { margin-top: 30px; text-align: center; color: rgba(255,255,255,0.6); font-size: 12px; }
+.footer-credit span {
+    display: block; font-size: 16px; font-weight: 600;
+    background: linear-gradient(to right, #00d2ff, #91eae4);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}

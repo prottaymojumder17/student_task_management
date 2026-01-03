@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="glass-card">
+        <h1>Student Task Manager</h1>
+        
+        <div class="input-form">
+            <input type="text" id="taskInput" placeholder="Write your goal...">
+            <div class="input-group">
+                <input type="date" id="dateInput">
+                <select id="priorityInput">
+                    <option value="Low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="footer-credit">
+            Developed by <span>Prottay Mojumder</span>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
